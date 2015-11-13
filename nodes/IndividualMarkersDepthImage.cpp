@@ -104,8 +104,8 @@ void getCapCallback (const sensor_msgs::ImageConstPtr & image_msg)
             cv::cvtColor(frame_uc, ipl_image_mat, CV_GRAY2BGR);
 
             IplImage *ipl_image = new IplImage(ipl_image_mat);
-            cv::imshow("gray", cv_ptr_->image);
-            cv::waitKey(5);
+            // cv::imshow("gray", cv_ptr_->image);
+            // cv::waitKey(5);
             //// = ipl_image_mat;//= cv_ptr_->image;
 
             //ipl_image = cvGetImage(&ipl_image_mat, &stub);
