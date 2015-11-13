@@ -116,6 +116,10 @@ add_executable(individualMarkersNoKinect nodes/IndividualMarkersNoKinect.cpp)
 target_link_libraries(individualMarkersNoKinect ar_track_alvar ${catkin_LIBRARIES})
 add_dependencies(individualMarkersNoKinect ${PROJECT_NAME}_gencpp  ${GENCPP_DEPS})
 
+add_executable(individualMarkersDepthImage nodes/IndividualMarkersDepthImage.cpp)
+target_link_libraries(individualMarkersDepthImage ar_track_alvar ${catkin_LIBRARIES})
+add_dependencies(individualMarkersDepthImage ${PROJECT_NAME}_gencpp  ${GENCPP_DEPS})
+
 add_executable(trainMarkerBundle nodes/TrainMarkerBundle.cpp)
 target_link_libraries(trainMarkerBundle ar_track_alvar ${catkin_LIBRARIES})
 add_dependencies(trainMarkerBundle ${PROJECT_NAME}_gencpp ${GENCPP_DEPS})
