@@ -123,7 +123,7 @@ void makeMarkerMsgs(int type, int id, Pose &p, sensor_msgs::ImageConstPtr image_
 
     //Publish the cam to marker transform for main marker in each bundle
     if(type==MAIN_MARKER){
-        std::string markerFrame = "ar_marker_";
+        std::string markerFrame = "depth_ar_marker_";
         std::stringstream out;
         out << id;
         std::string id_string = out.str();

@@ -136,7 +136,7 @@ void getCapCallback (const sensor_msgs::ImageConstPtr & image_msg)
                 tf::Transform markerPose = t * m; // marker pose in the camera frame
 
                 //Publish the transform from the camera to the marker
-                std::string markerFrame = "ar_marker_";
+                std::string markerFrame = "depth_ar_marker_";
                 std::stringstream out;
                 out << id;
                 std::string id_string = out.str();
